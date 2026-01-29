@@ -2124,3 +2124,197 @@ html[dir="rtl"] .project-category {
   font-size: var(--fs-7);
   text-align:center;
 }
+
+
+/* =========================
+   BLOG POSTS PAGES (posts/*.html)
+   ضع هذا آخر ملف style.css
+========================= */
+
+.post-page{
+  margin: 15px 12px;
+  margin-bottom: 75px;
+  min-width: 259px;
+}
+
+@media (min-width: 580px){
+  .post-page{
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1250px){
+  .post-page{
+    max-width: 950px;
+    margin-inline: auto;
+    margin-bottom: 60px;
+  }
+}
+
+/* نجعل المقال يظهر (لأن article عندك افتراضيًا display:none) */
+.post-page .post-article{
+  display: block !important;
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: var(--shadow-1);
+}
+
+@media (min-width: 580px){
+  .post-page .post-article{
+    padding: 30px;
+  }
+}
+
+/* رأس المقال */
+.post-hero{
+  margin-bottom: 18px;
+}
+
+.post-title{
+  color: var(--white-2);
+  font-size: var(--fs-1);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.post-title::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  right:0; /* RTL */
+  width: 44px;
+  height: 4px;
+  background: var(--text-gradient-yellow);
+  border-radius: 4px;
+}
+
+.post-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+}
+
+.post-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--bg-gradient-jet);
+  border: 1px solid var(--jet);
+}
+
+.post-badge ion-icon{
+  color: var(--orange-yellow-crayola);
+  font-size: 16px;
+}
+
+/* محتوى المقال */
+.post-content{
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.9;
+}
+
+.post-content p{
+  margin-bottom: 14px;
+}
+
+.post-content h2{
+  color: var(--white-2);
+  font-size: var(--fs-2);
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.post-content h3{
+  color: var(--white-2);
+  font-size: var(--fs-3);
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.post-content ul,
+.post-content ol{
+  margin: 10px 0 18px;
+  padding-right: 18px; /* RTL */
+}
+
+.post-content li{
+  margin-bottom: 8px;
+}
+
+/* صندوق ملاحظة */
+.post-note{
+  background: var(--border-gradient-onyx);
+  border-radius: 16px;
+  padding: 14px;
+  margin: 16px 0;
+  position: relative;
+  box-shadow: var(--shadow-2);
+}
+.post-note::before{
+  content:"";
+  position:absolute;
+  inset:1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index:-1;
+}
+.post-note strong{
+  color: var(--orange-yellow-crayola);
+}
+
+/* روابط */
+.post-content a{
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+}
+.post-content a:hover{
+  text-decoration: underline;
+}
+
+/* أزرار أسفل المقال */
+.post-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top: 22px;
+}
+
+.post-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border:1px solid var(--jet);
+  background: var(--eerie-black-2);
+  color: var(--white-2);
+  transition: var(--transition-1);
+  min-width: 180px;
+}
+
+.post-btn ion-icon{
+  font-size: 18px;
+  color: var(--orange-yellow-crayola);
+}
+
+.post-btn:hover{ transform: translateY(-1px); }
+
+.post-btn.primary{
+  background: var(--bg-gradient-yellow-1);
+  color: #111;
+  font-weight: 700;
+  border-color: transparent;
+}
+
