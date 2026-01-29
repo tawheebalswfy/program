@@ -2,32 +2,93 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>أخطاء شائعة تقلل سرعة الموقع وكيف تصلحها | توهيب عبدالعزيز</title>
-  <meta name="description" content="تعرف على أكثر الأخطاء التي تؤدي إلى بطء المواقع وكيفية تحسين سرعة الموقع وتجربة المستخدم وSEO." />
+  <meta name="description" content="تعرف على أكثر الأخطاء التي تسبب بطء المواقع وكيفية تحسين السرعة وتجربة المستخدم وSEO بخطوات عملية." />
   <link rel="canonical" href="https://tawheebalswfy.github.io/program/posts/site-speed.html">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
-<h1>أخطاء شائعة تقلل سرعة الموقع وكيف تصلحها</h1>
+<main class="post-page">
+  <article class="post-article">
 
-<p>سرعة الموقع عامل أساسي في تجربة المستخدم وترتيب Google.</p>
+    <header class="post-hero">
+      <h1 class="post-title">أخطاء شائعة تقلل سرعة الموقع وكيف تصلحها</h1>
 
-<h2>1. الصور الكبيرة</h2>
-<p>استخدم صور مضغوطة بصيغة WebP وتجنب الصور عالية الحجم.</p>
+      <div class="post-meta">
+        <span class="post-badge"><ion-icon name="pricetag-outline"></ion-icon> مواقع</span>
+        <span class="post-badge"><ion-icon name="calendar-outline"></ion-icon> 2026-01-29</span>
+        <span class="post-badge"><ion-icon name="person-outline"></ion-icon> توهيب عبدالعزيز</span>
+      </div>
+    </header>
 
-<h2>2. ملفات CSS و JavaScript غير مضغوطة</h2>
-<p>دمج وتقليل الملفات (Minify) يساعد على تسريع التحميل.</p>
+    <section class="post-content">
+      <p>
+        سرعة الموقع عامل أساسي في تجربة المستخدم وترتيب Google.
+        الزائر لا ينتظر كثيرًا: إذا تأخر الموقع، يغادر… وتخسر عميل محتمل.
+      </p>
 
-<h2>3. الاستضافة الضعيفة</h2>
-<p>اختيار استضافة جيدة أو CDN يفرق كثيرًا في الأداء.</p>
+      <h2>1) الصور الكبيرة (أكبر سبب للبطء)</h2>
+      <p>
+        استخدم صور مضغوطة، ويفضل WebP. ولا ترفع صورة حجمها 5MB ثم تعرضها بحجم صغير.
+      </p>
 
-<h2>4. عدم استخدام الكاش</h2>
-<p>التخزين المؤقت يقلل تحميل الصفحة في الزيارات المتكررة.</p>
+      <h2>2) ملفات CSS/JS كثيرة وغير محسّنة</h2>
+      <ul>
+        <li>قلّل عدد الملفات قدر الإمكان</li>
+        <li>استخدم ملفات minified</li>
+        <li>حمّل السكربتات غير الضرورية بشكل مؤجل (defer)</li>
+      </ul>
 
-<h2>5. كثرة الإضافات</h2>
-<p>كل إضافة إضافية قد تبطئ الموقع — استخدم الضروري فقط.</p>
+      <div class="post-note">
+        <strong>معلومة:</strong> كثرة مكتبات JS في صفحة بسيطة غالبًا تقتل الأداء بدون فائدة حقيقية.
+      </div>
 
-<p><strong>الخلاصة:</strong> موقع سريع = زوار أكثر + ترتيب أفضل.</p>
+      <h2>3) عدم تفعيل التخزين المؤقت (Cache)</h2>
+      <p>
+        الكاش يساعد الزائر في الزيارة الثانية أن يفتح الموقع بسرعة كبيرة.
+        على GitHub Pages كثير الأشياء ممتازة تلقائيًا، لكن التنظيم مهم.
+      </p>
+
+      <h2>4) الخطوط الخارجية والإضافات</h2>
+      <p>
+        تحميل خطوط كثيرة من Google Fonts يبطئ.
+        استخدم خط واحد أو وزنَين فقط (مثل 400 و 700).
+      </p>
+
+      <h2>5) صور الخلفيات والفيديوهات</h2>
+      <p>
+        الخلفيات الثقيلة والفيديو autoplay قد تجعل الصفحة بطيئة على الجوال.
+        إذا تحتاج فيديو… استخدم صورة preview وزر تشغيل.
+      </p>
+
+      <p>
+        لو تحب، أقدر أراجع موقعك وأعطيك قائمة “تحسينات سرعة” دقيقة حسب وضعك الحالي.
+      </p>
+    </section>
+
+    <section class="post-actions">
+      <a class="post-btn primary"
+         href="https://wa.me/966537716904?text=السلام%20عليكم%20أريد%20تحسين%20سرعة%20موقعي%20و%20SEO"
+         target="_blank" rel="noopener">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        تواصل واتساب
+      </a>
+
+      <a class="post-btn" href="../index.html">
+        <ion-icon name="home-outline"></ion-icon>
+        الرجوع للموقع
+      </a>
+    </section>
+
+  </article>
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
