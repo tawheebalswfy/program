@@ -3,9 +3,26 @@
 
   <url>
     <loc>https://tawheebalswfy.github.io/program/</loc>
-    <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://tawheebalswfy.github.io/program/posts/start-project.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tawheebalswfy.github.io/program/posts/site-speed.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tawheebalswfy.github.io/program/posts/ai-in-business.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
