@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ملف تعريفي - خدمات برمجية</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Cairo Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: "Cairo", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" data-sidebar>
+    <div class="sidebar-info">
+
+      <figure class="avatar-box">
+        <img src="./assets/images/my-avatar.png" alt="صورتك" width="80" />
+      </figure>
+
+      <div class="info-content">
+        <h1 class="name" title="اسمك هنا">توهيب عبدالعزيز</h1>
+        <p class="title">مبرمج وخدمات تقنية</p>
+      </div>
+
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>عرض التواصل</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+
+    </div>
+
+    <div class="sidebar-info_more">
+
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">البريد</p>
+            <a href="mailto:tawheebalswfy@gmail.com" class="contact-link">tawheebalswfy@gmail.com</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">الجوال</p>
+            <a href="tel:+966537716904" class="contact-link">00966537716904</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">متاح</p>
+            <time datetime="2026-01-01">على مدار الأسبوع</time>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">الموقع</p>
+            <address>عن بُعد / السعودية</address>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list">
+        <li class="social-item"><a href="#" class="social-link" aria-label="فيسبوك"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li class="social-item"><a href="#" class="social-link" aria-label="تويتر"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li class="social-item"><a href="#" class="social-link" aria-label="انستقرام"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
+
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main-content">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+
+        <!-- لازم النص يطابق data-page حرفيًا -->
+        <li class="navbar-item"><button class="navbar-link active" data-nav-link>نبذة</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>السيرة</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>الأعمال</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>مقالات</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>تواصل</button></li>
+
+      </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <article class="about active" data-page="نبذة">
+      <header>
+        <h2 class="h2 article-title">نبذة عني</h2>
+      </header>
+
+      <section class="about-text">
+        <p>
+          أقدّم خدمات برمجية وتقنية باحتراف، من تطوير مواقع وأنظمة مخصصة إلى حلول ذكاء صناعي وأتمتة.
+          هدفي تقديم عمل واضح، سريع، وقابل للتطوير مع دعم بعد التسليم.
+        </p>
+        <p>
+          إذا عندك فكرة مشروع، نظام لإدارة أعمالك، موقع تعريفي/متجر، أو مشروع تخرج—أقدر أنفّذه لك من البداية للنهاية
+          مع توثيق وشرح يساعدك على التقديم أو التشغيل بثقة.
+        </p>
+      </section>
+
+      <section class="service">
+        <h3 class="h3 service-title">الخدمات</h3>
+
+        <ul class="service-list">
+
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon-dev.svg" alt="برمجة" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">خدمات البرمجة بكافة أنواعها</h4>
+              <p class="service-item-text">مواقع، أنظمة، سكربتات، واجهات، قواعد بيانات، تكامل APIs، تحسين أداء وتصحيح أخطاء.</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon-design.svg" alt="مواقع" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">تصميم وتطوير مواقع احترافية</h4>
+              <p class="service-item-text">صفحة هبوط، موقع تعريفي، متجر بسيط، مع تصميم متجاوب وسريع وSEO أساسي.</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon-app.svg" alt="خدمات طلابية" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">خدمات طلابية ومشاريع تخرج</h4>
+              <p class="service-item-text">تنفيذ مشروع كامل + تقرير/عرض تقديمي + شرح وتشغيل + تجهيز للتسليم.</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon-photo.svg" alt="ذكاء صناعي" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">ذكاء صناعي وأتمتة</h4>
+              <p class="service-item-text">تحليل بيانات، Chatbots، تصنيف/تنبؤ، أتمتة مهام، لوحات تقارير تفاعلية.</p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </article>
+
+    <!-- RESUME -->
+    <article class="resume" data-page="السيرة">
+      <header>
+        <h2 class="h2 article-title">السيرة</h2>
+      </header>
+
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+          <h3 class="h3">التعليم</h3>
+        </div>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">ماجستير تقنية المعلومات</h4>
+            <span>2020 — 2024</span>
+            <p class="timeline-text">
+              جامعة تعز – كلية الهندسة. دراسة متقدمة في نظم المعلومات، هندسة البرمجيات، قواعد البيانات، تحليل الأنظمة، وتقنيات الذكاء الصناعي.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+          <h3 class="h3">الخبرات</h3>
+        </div>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">مشاريع برمجية وتقنية متنوعة</h4>
+            <span>2019 — الآن</span>
+            <p class="timeline-text">
+              تنفيذ وتطوير مواقع إلكترونية وأنظمة مخصصة، حلول ذكاء صناعي وأتمتة، ومشاريع تخرج وخدمات طلابية، مع دعم فني وشرح بعد التسليم وتحسين مستمر للأداء.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </article>
+
+    <!-- PORTFOLIO -->
+    <article class="portfolio" data-page="الأعمال">
+      <header>
+        <h2 class="h2 article-title">الأعمال</h2>
+      </header>
+
+      <section class="projects">
+
+        <ul class="filter-list">
+          <li class="filter-item"><button class="active" data-filter-btn>الكل</button></li>
+          <li class="filter-item"><button data-filter-btn>مواقع</button></li>
+          <li class="filter-item"><button data-filter-btn>أنظمة</button></li>
+          <li class="filter-item"><button data-filter-btn>ذكاء صناعي</button></li>
+          <li class="filter-item"><button data-filter-btn>تطبيقات</button></li>
+
+        </ul>
+
+        <div class="filter-select-box">
+          <button class="filter-select" data-select>
+            <div class="select-value" data-selecct-value>اختر تصنيف</div>
+            <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+          </button>
+
+          <ul class="select-list">
+            <li class="select-item"><button data-select-item>الكل</button></li>
+            <li class="select-item"><button data-select-item>مواقع</button></li>
+            <li class="select-item"><button data-select-item>أنظمة</button></li>
+            <li class="select-item"><button data-select-item>ذكاء صناعي</button></li>
+            <li class="select-item"><button data-select-item>تطبيقات</button></li>
+
+          </ul>
+        </div>
+
+        <ul class="project-list">
+
+          <li class="project-item active" data-filter-item data-category="مواقع">
+            <a href="https://github.com/tabler/tabler" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                <img src="./assets/images/project-1.jpg" alt="لوحة تحكم إدارية" loading="lazy">
+              </figure>
+              <h3 class="project-title">لوحة تحكم إدارية</h3>
+              <p class="project-category">مواقع</p>
+            </a>
+
+            <a class="project-cta" href="https://wa.me/966537716904?text=السلام%20عليكم%20أريد%20طلب%20مشروع%20مشابه:%20لوحة%20تحكم%20إدارية" target="_blank" rel="noopener">
+              طلب مشروع مشابه
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="مواقع">
+            <a href="https://github.com/Lissy93/dashy" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                <img src="./assets/images/project-2.png" alt="Dashboard شخصي" loading="lazy">
+              </figure>
+              <h3 class="project-title">Dashboard شخصي</h3>
+              <p class="project-category">مواقع</p>
+            </a>
+
+            <a class="project-cta" href="https://wa.me/966537716904?text=أرغب%20بطلب%20مشروع%20مشابه:%20Dashboard%20شخصي" target="_blank" rel="noopener">
+              طلب مشروع مشابه
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="أنظمة">
+            <a href="https://github.com/gothinkster/realworld" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                <img src="./assets/images/project-3.jpg" alt="نظام إدارة" loading="lazy">
+              </figure>
+              <h3 class="project-title">نظام إدارة متكامل</h3>
+              <p class="project-category">أنظمة</p>
+            </a>
+
+            <a class="project-cta" href="https://wa.me/966537716904?text=أريد%20تنفيذ%20نظام%20إدارة%20مشابه" target="_blank" rel="noopener">
+              طلب مشروع مشابه
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="ذكاء صناعي">
+            <a href="https://github.com/lobehub/lobe-chat" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                <img src="./assets/images/project-6.png" alt="شات بوت ذكي" loading="lazy">
+              </figure>
+              <h3 class="project-title">شات بوت ذكي</h3>
+              <p class="project-category">ذكاء صناعي</p>
+            </a>
+
+            <a class="project-cta" href="https://wa.me/966537716904?text=أرغب%20في%20تنفيذ%20شات%20بوت%20ذكي%20مشابه" target="_blank" rel="noopener">
+              طلب مشروع مشابه
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="ذكاء صناعي">
+            <a href="https://github.com/ongaunjie1/AI-Chatbot-DL-NLP" target="_blank" rel="noopener">
+              <figure class="project-img">
+                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                <img src="./assets/images/project-9.png" alt="تحليل نصوص" loading="lazy">
+              </figure>
+              <h3 class="project-title">تحليل نصوص بالذكاء الصناعي</h3>
+              <p class="project-category">ذكاء صناعي</p>
+            </a>
+
+            <a class="project-cta" href="https://wa.me/966537716904?text=طلب%20مشروع%20ذكاء%20صناعي%20مشابه:%20تحليل%20نصوص" target="_blank" rel="noopener">
+              طلب مشروع مشابه
+            </a>
+          </li>
+
+          <!-- تطبيق 1 -->
+<li class="project-item active" data-filter-item data-category="تطبيقات">
+  <a href="https://github.com/flutter/samples" target="_blank" rel="noopener">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/project-4.png" alt="تطبيق Flutter (Samples)" loading="lazy">
+    </figure>
+    <h3 class="project-title">تطبيق Flutter (نماذج)</h3>
+    <p class="project-category">تطبيقات</p>
+  </a>
+
+  <a class="project-cta"
+     href="https://wa.me/966537716904?text=أريد%20تنفيذ%20تطبيق%20جوال%20مشابه%20(Flutter)"
+     target="_blank" rel="noopener">
+    طلب مشروع مشابه
+  </a>
+</li>
+
+<!-- تطبيق 2 -->
+<li class="project-item active" data-filter-item data-category="تطبيقات">
+  <a href="https://github.com/AppFlowy-IO/AppFlowy" target="_blank" rel="noopener">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/project-8.jpg" alt="تطبيق إدارة ملاحظات" loading="lazy">
+    </figure>
+    <h3 class="project-title">تطبيق إدارة مهام/ملاحظات</h3>
+    <p class="project-category">تطبيقات</p>
+  </a>
+
+  <a class="project-cta"
+     href="https://wa.me/966537716904?text=أريد%20تنفيذ%20تطبيق%20ملاحظات/مهام%20مشابه"
+     target="_blank" rel="noopener">
+    طلب مشروع مشابه
+  </a>
+</li>
+
+<!-- تطبيق 3 -->
+<li class="project-item active" data-filter-item data-category="تطبيقات">
+  <a href="https://github.com/ionic-team/ionic-framework" target="_blank" rel="noopener">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/mobile.png" alt="تطبيق Hybrid" loading="lazy">
+    </figure>
+    <h3 class="project-title">تطبيق Hybrid (Ionic)</h3>
+    <p class="project-category">تطبيقات</p>
+  </a>
+
+  <a class="project-cta"
+     href="https://wa.me/966537716904?text=أريد%20تنفيذ%20تطبيق%20Hybrid%20مشابه%20(Ionic)"
+     target="_blank" rel="noopener">
+    طلب مشروع مشابه
+  </a>
+</li>
+
+
+        </ul>
+
+      </section>
+    </article>
+
+    <!-- BLOG (موجود عشان زر مقالات يشتغل) -->
+   <!-- BLOG / مقالات -->
+<article class="blog" data-page="مقالات">
+
+  <header>
+    <h2 class="h2 article-title">مقالات</h2>
+  </header>
+
+  <!-- مقدمة قصيرة -->
+  <section class="about-text" style="margin-bottom: 20px;">
+    <p>
+      هنا أنشر مقالات وتجارب مختصرة عن البرمجة، المشاريع، الذكاء الصناعي، وأفضل الممارسات في بناء الأنظمة.
+    </p>
+  </section>
+
+  <section class="blog-posts">
+    <ul class="blog-posts-list">
+
+      <!-- مقال 1 -->
+      <li class="blog-post-item">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-1.jpg" alt="مقال: كيف تبدأ مشروعك البرمجي" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">برمجة</p>
+              <span class="dot"></span>
+              <time datetime="2026-01-20">2026</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">كيف تبدأ مشروعك البرمجي من الصفر؟</h3>
+
+            <p class="blog-text">
+              خطوات عملية لتحديد المتطلبات، اختيار التقنية، بناء نسخة أولية، ثم التحسين والتطوير بشكل احترافي.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- مقال 2 -->
+      <li class="blog-post-item">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="مقال: أخطاء شائعة في المواقع" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">مواقع</p>
+              <span class="dot"></span>
+              <time datetime="2026-01-15">2026</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">أخطاء شائعة تقلل سرعة الموقع وكيف تصلحها</h3>
+
+            <p class="blog-text">
+              تحسين الصور، تقليل ملفات CSS/JS، الكاش، واختيار الاستضافة—نصائح مباشرة تفرق في الأداء وSEO.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- مقال 3 -->
+      <li class="blog-post-item">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-3.jpg" alt="مقال: الذكاء الصناعي للمشاريع" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">ذكاء صناعي</p>
+              <span class="dot"></span>
+              <time datetime="2026-01-10">2026</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">كيف تستفيد من الذكاء الصناعي في مشروعك؟</h3>
+
+            <p class="blog-text">
+              أفكار عملية: Chatbot، تصنيف، تنبؤ، أتمتة إجراءات—مع أمثلة بسيطة لما يمكن تطبيقه بسرعة.
+            </p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+
+</article>
+
+
+    <!-- CONTACT -->
+    <article class="contact" data-page="تواصل">
+  <header>
+    <h2 class="h2 article-title">تواصل</h2>
+  </header>
+
+  <!-- أزرار سريعة -->
+  <section class="contact-actions">
+    <button class="contact-action-btn" type="button" data-wa-open>
+      <ion-icon name="logo-whatsapp"></ion-icon>
+      <span>تواصل عبر واتساب</span>
+    </button>
+
+    <a class="contact-action-btn outline"
+       href="mailto:tawheebalswfy@gmail.com?subject=طلب%20خدمة%20برمجية&body=السلام%20عليكم%0A%0Aاكتب%20تفاصيل%20طلبك%20هنا..."
+       target="_blank" rel="noopener">
+      <ion-icon name="mail-outline"></ion-icon>
+      <span>فتح البريد</span>
+    </a>
+  </section>
+
+  <!-- خريطة (اختياري) -->
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sar!2ssa!4v1647608789441!5m2!1sar!2ssa"
+        width="400" height="300" loading="lazy"></iframe>
+    </figure>
+  </section>
+
+  <!-- فورم يرسل للايميل فعليًا (FormSubmit) -->
+  <section class="contact-form">
+    <h3 class="h3 form-title">نموذج التواصل (يوصل للإيميل)</h3>
+
+    <!-- ملاحظة: أول مرة لازم تؤكد بريدك من رسالة توصل لك من FormSubmit -->
+    <form action="https://formsubmit.co/tawheebalswfy@gmail.com" method="POST" class="form" data-form>
+      <!-- إعدادات FormSubmit -->
+      <input type="hidden" name="_subject" value="رسالة جديدة من موقعك الشخصي">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <!-- غير رابط التحويل بعد الإرسال لو عندك صفحة شكر -->
+      <input type="hidden" name="_next" value="./index.html">
+
+      <div class="input-wrapper">
+        <input type="text" name="الاسم" class="form-input" placeholder="الاسم الكامل" required data-form-input>
+        <input type="email" name="البريد" class="form-input" placeholder="البريد الإلكتروني" required data-form-input>
+      </div>
+
+      <textarea name="الرسالة" class="form-input" placeholder="اكتب رسالتك" required data-form-input></textarea>
+
+      <button class="form-btn" type="submit" disabled data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>إرسال للإيميل</span>
+      </button>
+    </form>
+
+    <p class="contact-note">
+      *ملاحظة:* أول مرة قد يطلب منك تأكيد الإيميل من رسالة تصلك من FormSubmit.
+    </p>
+  </section>
+
+  <!-- نافذة واتساب -->
+  <div class="wa-modal" data-wa-modal>
+    <div class="wa-overlay" data-wa-close></div>
+
+    <div class="wa-dialog" role="dialog" aria-modal="true" aria-label="تواصل عبر واتساب">
+      <div class="wa-head">
+        <h3>تواصل عبر واتساب</h3>
+        <button class="wa-x" type="button" data-wa-close aria-label="إغلاق">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="wa-body">
+        <label class="wa-label" for="waName">اسمك</label>
+        <input id="waName" class="wa-input" type="text" placeholder="اكتب اسمك">
+
+        <label class="wa-label" for="waMsg">رسالتك</label>
+        <textarea id="waMsg" class="wa-textarea" rows="4"
+          placeholder="اكتب تفاصيل طلبك (مثلاً: موقع/نظام/تطبيق/ذكاء صناعي...)"></textarea>
+
+        <button class="wa-send" type="button" data-wa-send>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <span>إرسال واتساب</span>
+        </button>
+
+        <p class="wa-hint">سيتم فتح واتساب برسالتك جاهزة للإرسال.</p>
+      </div>
+    </div>
+  </div>
+
+</article>
+
+  </div>
+</main>
+
+<script src="./assets/js/script.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
